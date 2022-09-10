@@ -10,10 +10,14 @@ jobs:
           - name: checkout
             uses: actions/checkout@v1
 
-          - name: multiline script
+          - name: List Files
             run: |
-                node -v
-                npm -v
+                ls -a
+                pwd
+                echo $GITHUB_SHA
+                echo $GITHUB_REPOSITORY
+                echo $GITHUB_WORKSPACE
+                echo "${{ githubb.token }}"
           - name: python Commands
             run: |
                 import platform
