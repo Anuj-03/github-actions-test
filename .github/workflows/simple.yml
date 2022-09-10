@@ -17,7 +17,7 @@ jobs:
                 echo $GITHUB_SHA
                 echo $GITHUB_REPOSITORY
                 echo $GITHUB_WORKSPACE
-                echo "${{ githubb.token }}"
+                echo "${{ github.token }}"
           - name: python Commands
             run: |
                 import platform
