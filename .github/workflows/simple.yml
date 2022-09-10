@@ -24,11 +24,3 @@ jobs:
                 print
                 (platform.processor())
             shell: python
-    run-windows-command:
-        runs-on: windows-latest
-        steps:
-          - name: PowerShell
-            run: get-location
-          - name: bash-prompt
-            run: pwd
-            shell: bash
